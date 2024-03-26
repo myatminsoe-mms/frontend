@@ -1,0 +1,49 @@
+{
+  "name": "onenex",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier .  --write",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@casl/ability": "^6.5.0",
+    "@casl/vue": "^2.2.1",
+    "@intlify/unplugin-vue-i18n": "^1.2.0",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.3",
+    "axios": "^1.5.0",
+    "date-fns": "^3.2.0",
+    "json-parse-bigint": "^1.0.4",
+    "moment": "^2.29.4",
+    "pinia": "^2.1.6",
+    "primeflex": "^3.3.1",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.34.1",
+    "qs": "^6.11.2",
+    "quill": "^1.3.7",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.4.1",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.4.0",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.3",
+    "sass": "^1.67.0",
+    "vite": "^4.4.9"
+  },
+  "lint-staged": {
+    "*.{js,vue,jsx,cjs,mjs}": [
+      "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+      "prettier --write --ignore-unknown"
+    ]
+  }
+}

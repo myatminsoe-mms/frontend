@@ -1,0 +1,3 @@
+{
+  "recommendations": ["vue.vscode-typescript-vue-plugin", "vue.volar", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "editorconfig.editorconfig", "wayou.vscode-todo-highlight"]
+}

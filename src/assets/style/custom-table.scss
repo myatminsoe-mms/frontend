@@ -1,0 +1,85 @@
+::v-deep(.p-paginator) {
+  .p-paginator-current {
+    margin-left: auto;
+  }
+}
+
+::v-deep(.p-datatable-header) {
+  background: none;
+  border: none;
+}
+
+::v-deep(.p-component-overlay) {
+  background-color: rgba(165, 180, 252, 0.2);
+}
+
+::v-deep(.p-frozen-column) {
+  background-color: var(--surface-b);
+}
+
+::v-deep(.custom-sm-button) {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+::v-deep(.p-datatable .p-datatable-tbody > tr:focus) {
+  outline: none;
+}
+
+::v-deep(.p-progressbar) {
+  height: 0.5rem;
+  background-color: #d8dadc;
+
+  .p-progressbar-value {
+    background-color: #607d8b;
+  }
+}
+
+::v-deep(.p-datepicker) {
+  min-width: 25rem;
+
+  td {
+    font-weight: 400;
+  }
+}
+
+::v-deep(.p-datatable) {
+  .p-datatable-header {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .p-paginator {
+    padding: 1rem;
+  }
+
+  .p-datatable-thead > tr > th {
+    text-align: left;
+  }
+
+  .p-datatable-tbody > tr > td {
+    cursor: auto;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .p-dropdown-label:not(.p-placeholder) {
+    text-transform: uppercase;
+  }
+}
+
+.confirmation-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  ::v-deep(.p-toolbar) {
+    flex-wrap: wrap;
+
+    .p-button {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
